@@ -5,7 +5,7 @@ import {FaTwitter, FaQuoteLeft, FaQuoteRight} from "react-icons/fa";
 
 interface Quote {
   quote: String;
-  /*author: String;*/
+  author: String;
 
 }
 const getRandomQuote = (): Quote => {
@@ -41,7 +41,7 @@ function App() {
         {quote.quote}
         <FaQuoteRight size="30" style={{marginLeft: "10px"}} />
         </h2>
-        
+        <h4>{quote.author}</h4>
       </div>
       <div className='buttons'>
         <a
@@ -58,10 +58,11 @@ function App() {
         <button id="new-quote" 
         onClick={changeQuote} 
         style = {{ backgroundColor: randomColor, transition }}>
-          Changue Quote 
+          Nueva Frase
           </button>
         </div>
         </div>
+        <h6>By Maximiliano DOnofrio</h6>
         </div>
   }
 
