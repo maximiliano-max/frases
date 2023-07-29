@@ -59,10 +59,10 @@ function App() {
         onClick={changeQuote} 
         style = {{ backgroundColor: randomColor, transition }}>
           Nueva Frase
-          </button>
+          </button><h6>By Maximiliano DOnofrio</h6>
         </div>
         </div>
-        <h6>By Maximiliano DOnofrio</h6>
+        
         </div>
   }
 
